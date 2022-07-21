@@ -41,4 +41,4 @@ function playRound(playerOpt, computerOpt){
 }
         
 //console.log(playRound(playerSelection, computerSelection));
-console.log(playRound("rock", "paper"));
+console.log(playRound('rock', 'paper'));
