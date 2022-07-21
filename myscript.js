@@ -16,12 +16,12 @@ function getComputerChoice(){
 }
 
 function playRound(playerOpt, computerOpt){
-        //* Comprobación
-        //*if (playerSelection.toLowerCase() != "rock" || "scissors" || "paper"){
-        //if (playerSelection.toLowerCase() != "rock"){
-        //  console.log("Please select Rock, Paper or Scissors: ")
-        //  return ""
-        // }
+    // Comprobación
+    if (playerSelection.toLowerCase() != "rock" || "scissors" || "paper"){
+    //if (playerSelection.toLowerCase() != "rock"){
+        console.log("Please select Rock, Paper or Scissors: ")
+        return "Please select Rock, Paper or Scissors: "
+     }
 
     //* Comparaciones computer win
     if (computerOpt == "rock" && playerOpt == "scissors"){
@@ -43,6 +43,9 @@ function playRound(playerOpt, computerOpt){
     }
 }
         
+function game(){
+
+}
 
 console.log(playRound(playerSelection, computerSelection));
 
