@@ -40,5 +40,4 @@ function playRound(playerOpt, computerOpt){
     }
 }
         
-        
 console.log(playRound(playerSelection, computerSelection));
