@@ -28,19 +28,19 @@ function playRound(playerOpt, computerOpt){
     if (computerOpt == "rock" && playerOpt == "scissors"){
         console.log("You Lose! Rock beats Scissors");
         return "Computer Wins"
-        computerWins++;
+        computerWins += 1;
     } else if (computerOpt == "scissors" && playerOpt == "paper"){
         console.log("You Lose! Scissors beats Paper");
         return "Computer Wins"
-        computerWins++;
+        computerWins += 1;
     } else if (computerOpt == "paper" && playerOpt == "scissors"){
         console.log("You Win! Scissors beats Paper");
         return "Player Wins"
-        playerWins++;
+        playerWins += 1;
     } else if (computerOpt == "scissors" && playerOpt == "rock"){
         console.log("You Win! Rock beats Scissors");
         return "Player Wins"
-        playerWins++;
+        playerWins += 1;
     } else if (computerOpt = playerOpt){
         return "Tie!";
     } else {
