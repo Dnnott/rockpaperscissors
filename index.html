@@ -9,6 +9,10 @@
     <!-- <link rel="stylesheet" href="mystyle.css"> -->
 </head>
 <script>
+let playerSelection = "rock";
+//*let computerSelection = getComputerChoice();
+let computerSelection = "scissors";
+
 function getComputerChoice(){
     eleccion = Math.floor(Math.random() * 3);
     if (eleccion == 0){
@@ -47,14 +51,11 @@ function playRound(playerSelection, computerSelection){
     }
 }
         
-const playerSelection = "rock";
-//*const computerSelection = getComputerChoice();
-const computerSelection = "scissors";
+
 console.log(playRound(playerSelection, computerSelection));
 
-function game(){
+function game(){}
 
-}
 </script>
 <body>
     <h1>Rock Paper Scissors Game</h1>
