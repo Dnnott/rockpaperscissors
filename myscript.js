@@ -54,6 +54,13 @@ function game(){
         console.log(playRound(playerSelection, computerSelection));
         console.log("Player: " +playerWins+ " Computer: " +computerWins)
      }
+     if (playerWins>computerWins){
+        return "Player Wins"
+        console.log("Game Over! Player Wins!")
+     } else {
+        return "Computer Wins"
+        console.log("Game Over! Computer Wins!")
+     }
      
 }
 
