@@ -1,5 +1,7 @@
 let playerSelection = "rock";
 let computerSelection = getComputerChoice();
+let playerWins = 0;
+let computerWins = 0;
 
 function getComputerChoice(){
     eleccion = Math.floor(Math.random() * 3);
@@ -27,15 +29,19 @@ function playRound(playerOpt, computerOpt){
     if (computerOpt == "rock" && playerOpt == "scissors"){
         console.log("You Lose! Rock beats Scissors");
         return "Computer Wins"
+        computerWins++;
     } else if (computerOpt == "scissors" && playerOpt == "paper"){
         console.log("You Lose! Scissors beats Paper");
         return "Computer Wins"
+        computerWins++;
     } else if (computerOpt == "paper" && playerOpt == "scissors"){
         console.log("You Win! Scissors beats Paper");
         return "Player Wins"
+        playerWins++;
     } else if (computerOpt == "scissors" && playerOpt == "rock"){
         console.log("You Win! Rock beats Scissors");
         return "Player Wins"
+        playerWins++;
     } else if (computerOpt = playerOpt){
         return "Tie! Play Again";
     } else {
@@ -44,6 +50,10 @@ function playRound(playerOpt, computerOpt){
 }
         
 function game(){
+    for (let i = 0; i < 5; i++) {
+        console.log(playRound(playerSelection, computerSelection));
+        
+     }
 
 }
 
