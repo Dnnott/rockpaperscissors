@@ -46,9 +46,6 @@ console.log(playRound(playerSelection, computerSelection));
 function game(){}
 
         
-const playerSelection = "rock";
-//*const computerSelection = getComputerChoice();
-const computerSelection = "scissors""
 console.log(playRound(playerSelection, computerSelection));
 
 function game(){
