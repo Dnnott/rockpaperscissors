@@ -25,16 +25,16 @@ function playRound(playerOpt, computerOpt){
         // }
 
     //* Comparaciones computer win
-    if (computerOpt == "rock" & playerOpt == "scissors"){
+    if (computerOpt == "rock" && playerOpt == "scissors"){
         console.log("You Lose! Rock beats Scissors");
         return "Computer Wins"
-    } else if (computerOpt == "scissors" & playerOpt == "paper"){
+    } else if (computerOpt == "scissors" && playerOpt == "paper"){
         console.log("You Lose! Scissors beats Paper");
         return "Computer Wins"
-    } else if (computerOpt == "paper" & playerOpt == "scissors"){
+    } else if (computerOpt == "paper" && playerOpt == "scissors"){
         console.log("You Win! Scissors beats Paper");
         return "Player Wins"
-    } else if (computerOpt == "Scissors" & playerOpt == "rock"){
+    } else if (computerOpt == "Scissors" && playerOpt == "rock"){
         console.log("You Win! Rock beats Scissors");
         return "Player Wins"
     } else {
