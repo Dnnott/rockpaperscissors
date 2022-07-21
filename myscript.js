@@ -19,7 +19,7 @@ function getComputerChoice(){
 
 function playRound(playerOpt, computerOpt){
     // Comprobación
-    if (playerSelection.toLowerCase() != "rock" || "scissors" || "paper"){
+    if (playerOpt.toLowerCase() != "rock" || "scissors" || "paper"){
     //if (playerSelection.toLowerCase() != "rock"){
         console.log("Please select Rock, Paper or Scissors: ")
         return "Please select Rock, Paper or Scissors: "
@@ -52,9 +52,9 @@ function playRound(playerOpt, computerOpt){
 function game(){
     for (let i = 0; i < 5; i++) {
         console.log(playRound(playerSelection, computerSelection));
-        
+        console.log("Player: " +playerWins+ " Computer: " +computerWins)
      }
-
+     
 }
 
 console.log(playRound(playerSelection, computerSelection));
