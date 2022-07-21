@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <!-- <script src="myscript.js"></script> -->
-    <link rel="stylesheet" href="mystyle.css">
+    <!-- <link rel="stylesheet" href="mystyle.css"> -->
 </head>
 <script>
 function getComputerChoice(){
@@ -25,7 +25,8 @@ function getComputerChoice(){
 
 function playRound(playerSelection,computerSelection){
         //* Comprobación
-        if (playerSelection.toLowerCase() != "rock" || "scissors" || "paper"){
+        //*if (playerSelection.toLowerCase() != "rock" || "scissors" || "paper"){
+        if (playerSelection.toLowerCase() != "rock"){
           console.log("Please select Rock, Paper or Scissors: ")
           return ""
          }
