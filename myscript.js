@@ -36,8 +36,10 @@ function playRound(playerOpt, computerOpt){
     } else if (computerOpt == "scissors" && playerOpt == "rock"){
         console.log("You Win! Rock beats Scissors");
         return "Player Wins"
+    } else if (computerOpt == playerOpt){
+        return "Tie! Play Again";
     } else {
-        return "Error";
+        return "Error"
     }
 }
         
