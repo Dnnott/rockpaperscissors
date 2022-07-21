@@ -42,5 +42,5 @@ function playRound(playerOpt, computerOpt){
     }
 }
         
-//console.log(playRound(playerSelection, computerSelection));
-console.log('rock');
+console.log(playRound(playerSelection, computerSelection));
+
