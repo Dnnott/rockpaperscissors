@@ -42,7 +42,7 @@ function playRound(playerOpt, computerOpt){
         return "Player Wins"
         playerWins++;
     } else if (computerOpt = playerOpt){
-        return "Tie! Play Again";
+        return "Tie!";
     } else {
         return "Error"
     }
@@ -63,5 +63,6 @@ function game(){
      
 }
 
-console.log(playRound(playerSelection, computerSelection));
+//console.log(playRound(playerSelection, computerSelection));
+console.log(game())
 
