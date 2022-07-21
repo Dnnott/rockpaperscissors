@@ -1,6 +1,6 @@
 let playerSelection = "rock";
-//*let computerSelection = getComputerChoice();
-let computerSelection = "scissors";
+let computerSelection = getComputerChoice();
+
 
 function getComputerChoice(){
     eleccion = Math.floor(Math.random() * 3);
