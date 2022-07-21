@@ -1,7 +1,6 @@
 let playerSelection = "rock";
 let computerSelection = getComputerChoice();
 
-
 function getComputerChoice(){
     eleccion = Math.floor(Math.random() * 3);
     if (eleccion == 0){
