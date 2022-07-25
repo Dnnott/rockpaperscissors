@@ -24,9 +24,9 @@ function playRound(playerOpt, computerOpt){
     if (playerOpt.toLowerCase() != "rock"){
         console.log("Please select Rock, Paper or Scissors: ")
         return "Please select Rock, Paper or Scissors: "
-     }
+    }
 
-    //* Comparaciones computer win
+    //* Comparaciones
     if (computerOpt == "rock" && playerOpt == "scissors"){
         console.log("You Lose! Rock beats Scissors");
         computerWins++;;
@@ -52,19 +52,21 @@ function playRound(playerOpt, computerOpt){
         
 function game(){
     for (let i = 0; i < 5; i++) {
-        console.log(playRound(playerSelection, computerSelection));
-        console.log("Player: " +playerWins+ " Computer: " +computerWins)
+        let jugar = playRound(playerSelection, computerSelection);
+        //console.log(playRound(playerSelection, computerSelection));
+        console.log(jugar);
+        console.log("Player: " +playerWins+ " Computer: " +computerWins);
      }
-     if (playerWins>computerWins){
-        return "Player Wins"
-        console.log("Game Over! Player Wins!")
+     if (playerWins > computerWins){
+        console.log("Game Over! Player Wins!");
+        return "Player Wins";
      } else {
-        return "Computer Wins"
-        console.log("Game Over! Computer Wins!")
+        console.log("Game Over! Computer Wins!");
+        return "Computer Wins";
      }
      
 }
 
 //console.log(playRound(playerSelection, computerSelection));
-console.log(game())
+console.log(game());
 
