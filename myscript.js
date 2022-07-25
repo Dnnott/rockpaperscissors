@@ -1,4 +1,6 @@
 //Definimos globals
+window.playerSelection = 'rock';
+window.computerSelection = 'rock';
 window.playerWins = 0;
 window.computerWins = 0;
 
