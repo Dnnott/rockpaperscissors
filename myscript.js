@@ -1,5 +1,5 @@
 //Definimos globals
-window.playerSelection = prompt("Rock, paper, scissors?");
+window.playerSelection = 'rock';
 window.computerSelection = getComputerChoice();
 window.playerWins = 0;
 window.computerWins = 0;
