@@ -1,4 +1,4 @@
-let playerSelection = "rock";
+let playerSelection = prompt("Rock, paper, scissors?");
 let computerSelection = getComputerChoice();
 //Definimos globals
 window.playerWins = 0;
