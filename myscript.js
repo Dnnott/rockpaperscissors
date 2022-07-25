@@ -1,5 +1,5 @@
 //Definimos globals
-window.playerSelection = 'rock';
+window.playerSelection = prompt("Rock, paper, scissors?");
 window.computerSelection = getComputerChoice();
 window.playerWins = 0;
 window.computerWins = 0;
@@ -19,10 +19,6 @@ function getComputerChoice(){
 }
 
 function playRound(playerOpt, computerOpt){
-    //let playerSelection = prompt("Rock, paper, scissors?");
-    //let computerSelection = getComputerChoice();
-    playerSelection = prompt("Rock, paper, scissors?");
-    computerSelection = getComputerChoice();
     
     // Comprobación
     //if (playerOpt.toLowerCase() != "rock"){
@@ -60,6 +56,8 @@ function game(){
         //console.log(playRound(playerSelection, computerSelection));
         console.log(jugar);
         console.log("Player: " +playerWins+ " Computer: " +computerWins);
+        playerSelection = prompt("Try again! Choose: Rock, paper, scissors?");
+        computerSelection = getComputerChoice();
      }
      if (playerWins > computerWins){
         console.log("Game Over! Player Wins!");
