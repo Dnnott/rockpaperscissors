@@ -7,14 +7,14 @@ window.computerWins = 0;
 function getComputerChoice(){
     eleccion = Math.floor(Math.random() * 3);
     if (eleccion == 0){
+        console.log("Computer selects: Rock");
         return "rock";
-        console.log("Computer selects: Rock")
     } else if (eleccion == 1){
+        console.log("Computer selects: Paper");
         return "paper";
-        console.log("Computer selects: Paper")
     } else {
+        console.log("Computer selects: Scissors");
         return "scissors";
-        console.log("Computer selects: Scissors")
     }
 }
 
@@ -29,20 +29,20 @@ function playRound(playerOpt, computerOpt){
     //* Comparaciones computer win
     if (computerOpt == "rock" && playerOpt == "scissors"){
         console.log("You Lose! Rock beats Scissors");
+        computerWins++;;
         return "Computer Wins"
-        computerWins++;
     } else if (computerOpt == "scissors" && playerOpt == "paper"){
         console.log("You Lose! Scissors beats Paper");
-        return "Computer Wins"
         computerWins++;
+        return "Computer Wins";
     } else if (computerOpt == "paper" && playerOpt == "scissors"){
         console.log("You Win! Scissors beats Paper");
-        return "Player Wins"
         playerWins++;
+        return "Player Wins";
     } else if (computerOpt == "scissors" && playerOpt == "rock"){
         console.log("You Win! Rock beats Scissors");
-        return "Player Wins"
         playerWins++;
+        return "Player Wins";
     } else if (computerOpt = playerOpt){
         return "Tie!";
     } else {
