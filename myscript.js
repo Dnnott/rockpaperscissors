@@ -21,8 +21,8 @@ function getComputerChoice(){
 function playRound(playerOpt, computerOpt){
     //let playerSelection = prompt("Rock, paper, scissors?");
     //let computerSelection = getComputerChoice();
-    window.playerSelection = prompt("Rock, paper, scissors?");
-    window.computerSelection = getComputerChoice();
+    playerSelection = prompt("Rock, paper, scissors?");
+    computerSelection = getComputerChoice();
     
     // Comprobación
     if (playerOpt.toLowerCase() != "rock"){
