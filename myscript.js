@@ -62,10 +62,14 @@ function game(){
      if (playerWins > computerWins){
         console.log("Game Over! Player Wins!");
         return "Player Wins";
-     } else {
+     } else if (computerWins > playerins){
         console.log("Game Over! Computer Wins!");
         return "Computer Wins";
+     } else {
+        console.log("Game Over! Tie");
+        return "Tie";
      }
+    
      
 }
 
