@@ -25,10 +25,10 @@ function playRound(playerOpt, computerOpt){
     computerSelection = getComputerChoice();
     
     // Comprobación
-    if (playerOpt.toLowerCase() != "rock"){
-        console.log("Please select Rock, Paper or Scissors: ")
-        return "Please select Rock, Paper or Scissors: "
-    }
+    //if (playerOpt.toLowerCase() != "rock"){
+    //    console.log("Please select Rock, Paper or Scissors: ")
+    //    return "Please select Rock, Paper or Scissors: "
+    //}
 
     //* Comparaciones
     if (computerOpt == "rock" && playerOpt == "scissors"){
