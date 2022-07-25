@@ -1,5 +1,8 @@
 let playerSelection = "rock";
 let computerSelection = getComputerChoice();
+//Definimos globals
+window.playerWins = 0;
+window.computerWins = 0;
 
 function getComputerChoice(){
     eleccion = Math.floor(Math.random() * 3);
@@ -16,9 +19,7 @@ function getComputerChoice(){
 }
 
 function playRound(playerOpt, computerOpt){
-    //Definimos globals
-    window.playerWins = 0;
-    window.computerWins = 0;
+    
     // Comprobación
     if (playerOpt.toLowerCase() != "rock"){
         console.log("Please select Rock, Paper or Scissors: ")
