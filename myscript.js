@@ -82,5 +82,5 @@ scissorsButton.onclick = () => alert("scissors");
 const rockButton = document.querySelector('#paperButton');
 paperButton.onclick = () => alert("paper");
 
-console.log(game());
+//console.log(game());
 
