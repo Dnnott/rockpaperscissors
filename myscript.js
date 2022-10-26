@@ -1,4 +1,4 @@
-//Definimos globals
+//*Definimos globals
 window.playerSelection = prompt("Rock, paper, scissors?");
 window.computerSelection = getComputerChoice();
 window.playerWins = 0;
@@ -20,7 +20,7 @@ function getComputerChoice(){
 
 function playRound(playerOpt, computerOpt){
     
-    // Comprobación
+    //*Comprobación
     //if (playerOpt.toLowerCase() != "rock"){
     //    console.log("Please select Rock, Paper or Scissors: ")
     //    return "Please select Rock, Paper or Scissors: "
@@ -53,7 +53,6 @@ function playRound(playerOpt, computerOpt){
 function game(){
     for (let i = 0; i < 5; i++) {
         let jugar = playRound(playerSelection, computerSelection);
-        //console.log(playRound(playerSelection, computerSelection));
         console.log(jugar);
         console.log("Player: " +playerWins+ " Computer: " +computerWins);
         playerSelection = prompt("Try again! Choose: Rock, paper, scissors?");
@@ -73,6 +72,15 @@ function game(){
      
 }
 
-//console.log(playRound(playerSelection, computerSelection));
+const rockButton = document.querySelector('#rockButton');
+rockButton.onclick = () => alert("rock");
+//rockButton.onclick = () => playRound(rock,paper);
+
+const rockButton = document.querySelector('#scissorsButton');
+scissorsButton.onclick = () => alert("scissors");
+
+const rockButton = document.querySelector('#paperButton');
+paperButton.onclick = () => alert("paper");
+
 console.log(game());
 
