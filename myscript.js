@@ -72,11 +72,10 @@ function game(){
      
 }
 
-
 const btn = document.querySelector('#btn');
 btn.addEventListener('click', () => {
   alert("Hello World");
 });
 
-//console.log(game());
+console.log(game());
 
