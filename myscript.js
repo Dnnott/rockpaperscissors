@@ -76,10 +76,10 @@ const rockButton = document.querySelector('#rockButton');
 rockButton.onclick = () => alert("rock");
 //rockButton.onclick = () => playRound(rock,paper);
 
-const rockButton = document.querySelector('#scissorsButton');
+const scissorsButton = document.querySelector('#scissorsButton');
 scissorsButton.onclick = () => alert("scissors");
 
-const rockButton = document.querySelector('#paperButton');
+const paperButton = document.querySelector('#paperButton');
 paperButton.onclick = () => alert("paper");
 
 const btn = document.querySelector('#btn');
