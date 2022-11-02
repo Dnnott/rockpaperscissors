@@ -72,15 +72,6 @@ function game(){
      
 }
 
-const rockButton = document.querySelector('#rockButton');
-rockButton.onclick = () => alert("rock");
-//rockButton.onclick = () => playRound(rock,paper);
-
-const scissorsButton = document.querySelector('#scissorsButton');
-scissorsButton.onclick = () => alert("scissors");
-
-const paperButton = document.querySelector('#paperButton');
-paperButton.onclick = () => alert("paper");
 
 const btn = document.querySelector('#btn');
 btn.addEventListener('click', () => {
