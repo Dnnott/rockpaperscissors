@@ -73,7 +73,7 @@ function game(){
 }
 
 const btn = document.querySelector('#btn');
-btn.addEventListener('click', () => {
+btn.addEventListener2('click', () => {
   alert("Hello World");
 });
 
@@ -81,9 +81,9 @@ function alertFunction() {
     alert("YAY! YOU DID IT!");
   }
 
-btn.addEventListener('click', function (e) {
-    console.log(e);
+  btn.addEventListener('click', function (e) {
+    console.log(e.target);
   });
-
+  
 console.log(game());
 
