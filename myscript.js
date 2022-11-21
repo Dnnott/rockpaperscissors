@@ -81,8 +81,12 @@ function alertFunction() {
     alert("YAY! YOU DID IT!");
   }
 
+  //btn.addEventListener('click', function (e) {
+    //console.log(e.target);
+  //});
+
   btn.addEventListener('click', function (e) {
-    console.log(e.target);
+    e.target.style.background = 'blue';
   });
 
 console.log(game());
